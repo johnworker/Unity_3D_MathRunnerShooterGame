@@ -21,5 +21,6 @@ public class PlayerController : MonoBehaviour
     void Shoot()
     {
         Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+        SoundManager.instance.PlayShootSound();
     }
 }
