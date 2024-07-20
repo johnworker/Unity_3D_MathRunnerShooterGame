@@ -2,7 +2,7 @@
 
 public class AdvancedEnemyController : MonoBehaviour
 {
-    public float speed = 5.0f;
+    public float speed = 2.0f;
     private Transform player;
     private Animator animator;
 

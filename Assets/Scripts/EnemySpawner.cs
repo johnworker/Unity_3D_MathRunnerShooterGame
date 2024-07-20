@@ -13,7 +13,10 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        int spawnIndex = Random.Range(0, spawnPoints.Length);
-        Instantiate(enemyPrefab, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+        if (!FindObjectOfType<GameManager>().IsGameOver)
+        {
+            int spawnIndex = Random.Range(0, spawnPoints.Length);
+            Instantiate(enemyPrefab, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+        }
     }
 }

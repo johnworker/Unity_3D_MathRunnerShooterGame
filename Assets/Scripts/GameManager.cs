@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverPanel;
     private int score;
     private bool isGameOver;
+
+    public bool IsGameOver { get { return isGameOver; } }
 
     void Start()
     {
@@ -41,6 +44,6 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
