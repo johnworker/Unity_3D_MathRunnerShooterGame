@@ -12,15 +12,18 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        Vector3 direction = (player.position - transform.position).normalized;
-        transform.Translate(direction * speed * Time.deltaTime);
+        if (player != null)
+        {
+            Vector3 direction = (player.position - transform.position).normalized;
+            transform.Translate(direction * speed * Time.deltaTime);
+        }
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            FindObjectOfType<GameManager>().GameOver();
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
             Destroy(gameObject);
         }
         else if (collision.gameObject.CompareTag("Bullet"))
