@@ -969,6 +969,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &1360463765 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2373246044477488434, guid: a83a70fb780b7a542874f5975c670bfb, type: 3}
+  m_PrefabInstance: {fileID: 2373246045380578985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1403514738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,3 +1839,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a83a70fb780b7a542874f5975c670bfb, type: 3}
+--- !u!1 &2373246045380578986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2373246044695928254, guid: a83a70fb780b7a542874f5975c670bfb, type: 3}
+  m_PrefabInstance: {fileID: 2373246045380578985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2373246045380578987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373246045380578986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9123327150e45d544827d5fb59cbf53c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillCooldown: 5
+  areaAttackPrefab: {fileID: 1577686680}
+  attackPoint: {fileID: 1360463765}

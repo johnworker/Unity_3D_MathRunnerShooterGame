@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     void UpdateScoreText()
     {
-        scoreText.text = "Score: " + score;
+        scoreText.text = "分數: " + score;
     }
 
     public void GameOver()
